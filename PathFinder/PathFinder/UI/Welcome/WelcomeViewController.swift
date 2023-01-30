@@ -82,9 +82,8 @@ class WelcomeViewController: BaseViewController {
         }
         
         tcomLabel.snp.makeConstraints { make in
-            make.top.equalTo(tcomLogoImageView.snp.bottom).offset(Dimensions.Inset.medium)
-            make.left.equalToSuperview().offset(Dimensions.Inset.medium)
-            make.right.equalToSuperview().offset(-Dimensions.Inset.medium)
+            make.top.equalTo(tcomLogoImageView.snp.bottom).offset(Dimensions.Inset.small)
+            make.centerX.equalTo(tcomLogoImageView.snp.centerX)
         }
         
         welcomeTo.snp.makeConstraints { make in

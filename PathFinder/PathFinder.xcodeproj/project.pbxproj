@@ -40,6 +40,7 @@
 		4737157529881BEC008BC151 /* GetUserCoordinatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737157429881BEC008BC151 /* GetUserCoordinatesUseCase.swift */; };
 		4737157729881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */; };
 		47E2B45029883FC40011FE7F /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B44F29883FC40011FE7F /* Dimensions.swift */; };
+		47E2B45229884CF00011FE7F /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B45129884CF00011FE7F /* LocationSearchViewModel.swift */; };
 		47FBD5A329832CCF00E145F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A229832CCF00E145F5 /* AppDelegate.swift */; };
 		47FBD5A529832CCF00E145F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */; };
 		47FBD5AC29832CD300E145F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FBD5AB29832CD300E145F5 /* Images.xcassets */; };
@@ -99,6 +100,7 @@
 		4737157429881BEC008BC151 /* GetUserCoordinatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserCoordinatesUseCase.swift; sourceTree = "<group>"; };
 		4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationPickViewController+HandleMapSearch.swift"; sourceTree = "<group>"; };
 		47E2B44F29883FC40011FE7F /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		47E2B45129884CF00011FE7F /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		47FBD59F29832CCF00E145F5 /* PathFinderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBD5A229832CCF00E145F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				4737154929860D51008BC151 /* Cells */,
 				4737154729860C3C008BC151 /* LocationSearchViewController.swift */,
 				4737154529860B26008BC151 /* LocationSearchViewController+DataSource.swift */,
+				47E2B45129884CF00011FE7F /* LocationSearchViewModel.swift */,
 			);
 			path = LocationSearch;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				4737151129843737008BC151 /* DIManager.swift in Sources */,
 				4737156D2987F6E3008BC151 /* GetLocationDataUseCase.swift in Sources */,
 				473715172984470E008BC151 /* LocationPickViewController.swift in Sources */,
+				47E2B45229884CF00011FE7F /* LocationSearchViewModel.swift in Sources */,
 				4737151A29844996008BC151 /* Images.swift in Sources */,
 				47371564298768E0008BC151 /* LocationPickViewModel.swift in Sources */,
 				4737155E298765A4008BC151 /* LocationServiceDelegate.swift in Sources */,

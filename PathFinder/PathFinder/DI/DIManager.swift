@@ -20,6 +20,7 @@ final class DIManager {
             // view models
             WelcomeViewModelAssembly(),
             LocationPickViewModelAssembly(),
+            LocationSearchViewModelAssembly(),
             CompassViewModelAssembly()
             
         ], container: container)

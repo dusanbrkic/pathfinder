@@ -20,6 +20,14 @@ class LocationPickViewModelAssembly: Assembly {
     }
 }
 
+class LocationSearchViewModelAssembly: Assembly {
+    func assemble(container: Swinject.Container) {
+        container.register(LocationSearchViewModel.self) { resolver in
+            return LocationSearchViewModel()
+        }
+    }
+}
+
 class CompassViewModelAssembly: Assembly {
     func assemble(container: Swinject.Container) {
         container.register(CompassViewModel.self) { resolver in

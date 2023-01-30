@@ -4,7 +4,12 @@ import MapKit
 class LocationSearchViewController: BaseViewController {
     static let cellHeight: CGFloat = 45
     
+    let viewModel = DIManager.instance.resolve(LocationSearchViewModel.self)
+    
+    var region: MKCoordinateRegion?
+    var matchingItems: [MKMapItem] = []
     var searchController: UISearchController?
+    weak var searchDelegate: HandleMapSearch?
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -18,14 +23,11 @@ class LocationSearchViewController: BaseViewController {
         return collectionView
     }()
     
-    var region: MKCoordinateRegion?
-    weak var searchDelegate: HandleMapSearch?
-    var matchingItems: [MKMapItem] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
+        setupObservers()
     }
     
     private func setupViews() {
@@ -36,24 +38,36 @@ class LocationSearchViewController: BaseViewController {
             make.left.right.bottom.equalToSuperview()
         }
     }
+    
+    private func setupObservers() {
+        viewModel.$state
+            .receive(on: DispatchQueue.main)
+            .dropFirst()
+            .sink { [weak self] state in
+                switch state {
+                case is LocationSearchState.Idle:
+                    let response = (state as? LocationSearchState.Idle)?.response
+                    self?.updateViews(response: response)
+                default:
+                    break
+                }
+            }.store(in: &cancellableSet)
+    }
+    
+    private func updateViews(response: MKLocalSearch.Response?) {
+        guard let response = response else {
+            return
+        }
+        self.matchingItems = response.mapItems
+        self.collectionView.reloadData()
+    }
 }
 
 
 extension LocationSearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         self.searchController = searchController
-        guard let region = region,
-              let searchBarText = searchController.searchBar.text else { return }
-        let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = searchBarText
-        request.region = region
-        let search = MKLocalSearch(request: request)
-        search.start { response, _ in
-            guard let response = response else {
-                return
-            }
-            self.matchingItems = response.mapItems
-            self.collectionView.reloadData()
-        }
+        guard let region = region, let searchBarText = searchController.searchBar.text else { return }
+        viewModel.searchPlaces(query: searchBarText, region: region)
     }
 }
