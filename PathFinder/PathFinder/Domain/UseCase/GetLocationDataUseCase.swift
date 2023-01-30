@@ -15,7 +15,6 @@ class GetLocationDataUseCase: GetLocationDataUseCaseDelegate {
     func execute(with pickedLocationCoordinates: Location.Coordinates) -> AnyPublisher<LocationData?, Never> {
         return Publishers
             .CombineLatest(locationService.currentLocation, locationService.currentHeading)
-            .receive(on: DispatchQueue.global(qos: .background))
             .map { [weak self] currentLocationCoordinates, trueNorthHeading in
                 guard let pickedLocationHeading = self?.getPickedLocationHeading(from: currentLocationCoordinates, to: pickedLocationCoordinates), let distance = self?.locationService.getDistance(from: currentLocationCoordinates, to: pickedLocationCoordinates) else { return nil }
                 
@@ -35,8 +34,8 @@ class GetLocationDataUseCase: GetLocationDataUseCaseDelegate {
         let y = sin(dLon) * cos(lat2)
         let x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon)
         
-        var radiansBearing = atan2(y, x)
+        var bearing = atan2(y, x)
         
-        return Location.Heading(radiansBearing)
+        return Location.Heading(bearing)
     }
 }

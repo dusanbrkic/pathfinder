@@ -44,7 +44,5 @@ extension LocationService: CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        // Handle failure to get a user’s location
-    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {}
 }

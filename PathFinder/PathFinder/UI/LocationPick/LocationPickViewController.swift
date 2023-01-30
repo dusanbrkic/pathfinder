@@ -3,6 +3,9 @@ import SnapKit
 import MapKit
 
 class LocationPickViewController: BaseViewController {
+    static let smallCoordinatesDelta = 0.05
+    static let largeCoordinatesDelta = 0.2
+    
     private let viewModel = DIManager.instance.resolve(LocationPickViewModel.self)
     
     var selectedPin: MKPlacemark? = nil
@@ -16,7 +19,7 @@ class LocationPickViewController: BaseViewController {
     
     lazy var chooseLocationButton: UIButton = {
         let button = UIButton(frame: .zero)
-        button.setTitle("Choose Location", for: .normal)
+        button.setTitle(Localization.General.chooseThisLocation, for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.isHidden = true
         return button
@@ -46,7 +49,7 @@ class LocationPickViewController: BaseViewController {
         mapView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.left.right.equalToSuperview()
-            make.bottom.equalTo(chooseLocationButton.snp.top).offset(-30)
+            make.bottom.equalTo(chooseLocationButton.snp.top).offset(-Dimensions.Inset.large)
         }
     }
     
@@ -61,7 +64,7 @@ class LocationPickViewController: BaseViewController {
     
     private func setMapCenter(with coordinates: Location.Coordinates) {
         let mapCoordinates = CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        let span = MKCoordinateSpan(latitudeDelta: Self.largeCoordinatesDelta, longitudeDelta: Self.largeCoordinatesDelta)
         let region = MKCoordinateRegion(center: mapCoordinates, span: span)
         mapView.setRegion(region, animated: true)
         selectLocation(on: MKPlacemark(coordinate: mapCoordinates))
@@ -70,7 +73,7 @@ class LocationPickViewController: BaseViewController {
     
     private func setupSearchBar() {
         let locationSearchViewController = LocationSearchViewController()
-        locationSearchViewController.mapView = mapView
+        locationSearchViewController.region = mapView.region
         locationSearchViewController.searchDelegate = self
         navigationItem.searchController = UISearchController(searchResultsController: locationSearchViewController)
         
@@ -115,7 +118,7 @@ class LocationPickViewController: BaseViewController {
         mapView.addAnnotation(annotation)
         
         if isFromSearch {
-            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let span = MKCoordinateSpan(latitudeDelta: Self.smallCoordinatesDelta, longitudeDelta: Self.smallCoordinatesDelta)
             let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }

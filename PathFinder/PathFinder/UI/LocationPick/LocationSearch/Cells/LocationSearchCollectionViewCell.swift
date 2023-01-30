@@ -24,6 +24,14 @@ class LocationSearchCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with mapItem: MKMapItem) {
-        locationNameLabel.text = mapItem.name
+        locationNameLabel.text = "\(mapItem.name ?? "")"
+        
+        if let city = mapItem.placemark.locality {
+            locationNameLabel.text?.append(", \(city)")
+        }
+        
+        if let country = mapItem.placemark.country {
+            locationNameLabel.text?.append(", \(country)")
+        }
     }
 }

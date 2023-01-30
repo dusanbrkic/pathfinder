@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		473714F7298405B3008BC151 /* ApplicationFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473714F6298405B3008BC151 /* ApplicationFlowViewController.swift */; };
-		473714FF29840AFC008BC151 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473714FE29840AFC008BC151 /* Colors.xcassets */; };
 		4737150329842DE3008BC151 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737150229842DE3008BC151 /* MainNavigationController.swift */; };
 		4737150529842EAF008BC151 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737150429842EAF008BC151 /* WelcomeViewController.swift */; };
 		4737151129843737008BC151 /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737151029843737008BC151 /* DIManager.swift */; };
@@ -19,7 +18,6 @@
 		4737151C298449F2008BC151 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737151B298449F2008BC151 /* Localization.swift */; };
 		4737152729844FD7008BC151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4737152529844FD7008BC151 /* Main.storyboard */; };
 		4737152A298451B6008BC151 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4737152C298451B6008BC151 /* Localizable.strings */; };
-		4737152F29845415008BC151 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737152E29845415008BC151 /* ActionButton.swift */; };
 		4737153229845632008BC151 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4737153129845632008BC151 /* Swinject */; };
 		473715352984563F008BC151 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 473715342984563F008BC151 /* SnapKit */; };
 		4737153C29846964008BC151 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737153B29846964008BC151 /* BaseViewController.swift */; };
@@ -41,6 +39,7 @@
 		473715732988034A008BC151 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473715722988034A008BC151 /* UseCaseAssembly.swift */; };
 		4737157529881BEC008BC151 /* GetUserCoordinatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737157429881BEC008BC151 /* GetUserCoordinatesUseCase.swift */; };
 		4737157729881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */; };
+		47E2B45029883FC40011FE7F /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B44F29883FC40011FE7F /* Dimensions.swift */; };
 		47FBD5A329832CCF00E145F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A229832CCF00E145F5 /* AppDelegate.swift */; };
 		47FBD5A529832CCF00E145F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */; };
 		47FBD5AC29832CD300E145F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FBD5AB29832CD300E145F5 /* Images.xcassets */; };
@@ -69,7 +68,6 @@
 
 /* Begin PBXFileReference section */
 		473714F6298405B3008BC151 /* ApplicationFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowViewController.swift; sourceTree = "<group>"; };
-		473714FE29840AFC008BC151 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4737150229842DE3008BC151 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		4737150429842EAF008BC151 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4737151029843737008BC151 /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 		4737152429844CCF008BC151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4737152629844FD7008BC151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4737152B298451B6008BC151 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4737152E29845415008BC151 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		4737153B29846964008BC151 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		473715402985F9A4008BC151 /* LocationSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		4737154529860B26008BC151 /* LocationSearchViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationSearchViewController+DataSource.swift"; sourceTree = "<group>"; };
@@ -101,6 +98,7 @@
 		473715722988034A008BC151 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		4737157429881BEC008BC151 /* GetUserCoordinatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserCoordinatesUseCase.swift; sourceTree = "<group>"; };
 		4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationPickViewController+HandleMapSearch.swift"; sourceTree = "<group>"; };
+		47E2B44F29883FC40011FE7F /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		47FBD59F29832CCF00E145F5 /* PathFinderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBD5A229832CCF00E145F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,12 +143,10 @@
 			children = (
 				4737154A298618C7008BC151 /* Extension */,
 				4737153A29846957008BC151 /* Base */,
-				4737152D29845404008BC151 /* Component */,
 				473715582986FA5A008BC151 /* CompassViewController */,
 				473714F0298402A8008BC151 /* LocationPick */,
 				473714EF2984025B008BC151 /* Welcome */,
 				4737150129842DCF008BC151 /* Main */,
-				4737153F29859561008BC151 /* Map */,
 				4737151829844984008BC151 /* Util */,
 				47FBD5A229832CCF00E145F5 /* AppDelegate.swift */,
 				47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */,
@@ -215,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				47FBD5AB29832CD300E145F5 /* Images.xcassets */,
-				473714FE29840AFC008BC151 /* Colors.xcassets */,
 				4737152C298451B6008BC151 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -250,16 +245,9 @@
 			children = (
 				4737151929844996008BC151 /* Images.swift */,
 				4737151B298449F2008BC151 /* Localization.swift */,
+				47E2B44F29883FC40011FE7F /* Dimensions.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		4737152D29845404008BC151 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				4737152E29845415008BC151 /* ActionButton.swift */,
-			);
-			path = Component;
 			sourceTree = "<group>";
 		};
 		4737153A29846957008BC151 /* Base */ = {
@@ -269,13 +257,6 @@
 				4737154F2986BA4F008BC151 /* BaseViewModel.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		4737153F29859561008BC151 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		473715422986005E008BC151 /* LocationSearch */ = {
@@ -520,7 +501,6 @@
 				4737152A298451B6008BC151 /* Localizable.strings in Resources */,
 				47FBD5AF29832CD300E145F5 /* LaunchScreen.storyboard in Resources */,
 				4737152729844FD7008BC151 /* Main.storyboard in Resources */,
-				473714FF29840AFC008BC151 /* Colors.xcassets in Resources */,
 				47FBD5AC29832CD300E145F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +530,7 @@
 				4737154E2986BA31008BC151 /* WelcomeViewModel.swift in Sources */,
 				473714F7298405B3008BC151 /* ApplicationFlowViewController.swift in Sources */,
 				4737155C298762C0008BC151 /* LocationService.swift in Sources */,
+				47E2B45029883FC40011FE7F /* Dimensions.swift in Sources */,
 				4737155A2986FA73008BC151 /* CompassViewController.swift in Sources */,
 				4737156729877338008BC151 /* CompassViewModel.swift in Sources */,
 				4737151C298449F2008BC151 /* Localization.swift in Sources */,
@@ -576,7 +557,6 @@
 				4737154C298618D5008BC151 /* UIView.swift in Sources */,
 				4737154829860C3C008BC151 /* LocationSearchViewController.swift in Sources */,
 				473715412985F9A4008BC151 /* LocationSearchCollectionViewCell.swift in Sources */,
-				4737152F29845415008BC151 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

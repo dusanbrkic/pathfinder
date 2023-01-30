@@ -1,6 +1,6 @@
 import MapKit
 
-protocol HandleMapSearch {
+protocol HandleMapSearch: AnyObject {
     func dropPinZoomIn(placemark: MKPlacemark)
 }
 

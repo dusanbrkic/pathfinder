@@ -2,6 +2,8 @@ import UIKit
 import Combine
 
 class CompassViewController: BaseViewController {
+    static let compassWidth: CGFloat = 200
+    
     private let viewModel = DIManager.instance.resolve(CompassViewModel.self)
     
     private var pickedLocationCoordinates: Location.Coordinates?
@@ -27,7 +29,7 @@ class CompassViewController: BaseViewController {
     
     private lazy var distanceLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = UIFont(name: "Arial-BoldMT", size: 22)
+        label.font = UIFont(name: "Arial-BoldMT", size: Dimensions.Fonts.medium)
         label.textAlignment = .center
         return label
     }()
@@ -48,14 +50,14 @@ class CompassViewController: BaseViewController {
         view.addSubview(distanceLabel)
         
         compassView.snp.makeConstraints { make in
-            make.width.equalTo(200)
+            make.width.equalTo(Self.compassWidth)
             make.center.equalToSuperview()
         }
         
         distanceLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(25)
-            make.right.equalToSuperview().offset(-25)
-            make.top.equalTo(compassView.snp.bottom).offset(15)
+            make.left.equalToSuperview().offset(Dimensions.Inset.large)
+            make.right.equalToSuperview().offset(-Dimensions.Inset.large)
+            make.top.equalTo(compassView.snp.bottom).offset(Dimensions.Inset.medium)
         }
     }
     
