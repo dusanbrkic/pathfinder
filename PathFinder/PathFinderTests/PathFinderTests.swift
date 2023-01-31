@@ -1,12 +1,7 @@
-//
-//  PathFinderTests.swift
-//  PathFinderTests
-//
-//  Created by Dusan Brkic on 26.1.23..
-//
-
 import XCTest
-@testable import PathFinder
+import Mockingbird
+
+@testable import PathFinderDev
 
 final class PathFinderTests: XCTestCase {
 

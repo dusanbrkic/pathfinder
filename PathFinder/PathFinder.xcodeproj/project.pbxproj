@@ -41,6 +41,12 @@
 		4737157729881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */; };
 		47E2B45029883FC40011FE7F /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B44F29883FC40011FE7F /* Dimensions.swift */; };
 		47E2B45229884CF00011FE7F /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B45129884CF00011FE7F /* LocationSearchViewModel.swift */; };
+		47E2B45F2988700E0011FE7F /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 47E2B45E2988700E0011FE7F /* Mockingbird */; };
+		47E2B4612988705E0011FE7F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E2B4602988705E0011FE7F /* Colors.xcassets */; };
+		47E2B46E29889B4B0011FE7F /* GetUserLocationUseCaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B46D29889B4B0011FE7F /* GetUserLocationUseCaseTestCase.swift */; };
+		47E2B4712988BFA40011FE7F /* TestMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B4702988BFA40011FE7F /* TestMocks.swift */; };
+		47E2B4732988C38E0011FE7F /* GetLocationDataUseCaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B4722988C38E0011FE7F /* GetLocationDataUseCaseTestCase.swift */; };
+		47E2B4762988C8320011FE7F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E2B4752988C8320011FE7F /* Location.swift */; };
 		47FBD5A329832CCF00E145F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A229832CCF00E145F5 /* AppDelegate.swift */; };
 		47FBD5A529832CCF00E145F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */; };
 		47FBD5AC29832CD300E145F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FBD5AB29832CD300E145F5 /* Images.xcassets */; };
@@ -48,6 +54,7 @@
 		47FBD5BA29832CD300E145F5 /* PathFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5B929832CD300E145F5 /* PathFinderTests.swift */; };
 		47FBD5C429832CD300E145F5 /* PathFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5C329832CD300E145F5 /* PathFinderUITests.swift */; };
 		47FBD5C629832CD300E145F5 /* PathFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBD5C529832CD300E145F5 /* PathFinderUITestsLaunchTests.swift */; };
+		4C022D1648703E25ECF5E7EF /* PathFinderTests-PathFinderDevMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC5AFD8E1E33BD7CA4B26B /* PathFinderTests-PathFinderDevMocks.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45CC5AFD8E1E33BD7CA4B26B /* PathFinderTests-PathFinderDevMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "PathFinderTests-PathFinderDevMocks.generated.swift"; path = "MockingbirdMocks/PathFinderTests-PathFinderDevMocks.generated.swift"; sourceTree = "<group>"; };
 		473714F6298405B3008BC151 /* ApplicationFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowViewController.swift; sourceTree = "<group>"; };
 		4737150229842DE3008BC151 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		4737150429842EAF008BC151 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +109,11 @@
 		4737157629881DD0008BC151 /* LocationPickViewController+HandleMapSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationPickViewController+HandleMapSearch.swift"; sourceTree = "<group>"; };
 		47E2B44F29883FC40011FE7F /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		47E2B45129884CF00011FE7F /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		47E2B4602988705E0011FE7F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		47E2B46D29889B4B0011FE7F /* GetUserLocationUseCaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetUserLocationUseCaseTestCase.swift; path = ../../../../../../GetUserLocationUseCaseTestCase.swift; sourceTree = "<group>"; };
+		47E2B4702988BFA40011FE7F /* TestMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMocks.swift; sourceTree = "<group>"; };
+		47E2B4722988C38E0011FE7F /* GetLocationDataUseCaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationDataUseCaseTestCase.swift; sourceTree = "<group>"; };
+		47E2B4752988C8320011FE7F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		47FBD59F29832CCF00E145F5 /* PathFinderDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathFinderDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FBD5A229832CCF00E145F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47FBD5A429832CCF00E145F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E2B45F2988700E0011FE7F /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +159,7 @@
 			children = (
 				4737154A298618C7008BC151 /* Extension */,
 				4737153A29846957008BC151 /* Base */,
-				473715582986FA5A008BC151 /* CompassViewController */,
+				473715582986FA5A008BC151 /* Compass */,
 				473714F0298402A8008BC151 /* LocationPick */,
 				473714EF2984025B008BC151 /* Welcome */,
 				4737150129842DCF008BC151 /* Main */,
@@ -213,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				47FBD5AB29832CD300E145F5 /* Images.xcassets */,
+				47E2B4602988705E0011FE7F /* Colors.xcassets */,
 				4737152C298451B6008BC151 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -289,13 +304,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		473715582986FA5A008BC151 /* CompassViewController */ = {
+		473715582986FA5A008BC151 /* Compass */ = {
 			isa = PBXGroup;
 			children = (
 				473715592986FA73008BC151 /* CompassViewController.swift */,
 				4737156629877338008BC151 /* CompassViewModel.swift */,
 			);
-			path = CompassViewController;
+			path = Compass;
 			sourceTree = "<group>";
 		};
 		4737155F2987666E008BC151 /* Model */ = {
@@ -339,6 +354,39 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		47E2B45B29886F750011FE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47E2B46B29889B290011FE7F /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				47E2B46D29889B4B0011FE7F /* GetUserLocationUseCaseTestCase.swift */,
+				47E2B4722988C38E0011FE7F /* GetLocationDataUseCaseTestCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		47E2B46C29889B350011FE7F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				47E2B4742988C81D0011FE7F /* Model */,
+				47E2B46B29889B290011FE7F /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		47E2B4742988C81D0011FE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47E2B4752988C8320011FE7F /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		47FBD59629832CCF00E145F5 = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +394,8 @@
 				47FBD5B829832CD300E145F5 /* PathFinderTests */,
 				47FBD5C229832CD300E145F5 /* PathFinderUITests */,
 				47FBD5A029832CCF00E145F5 /* Products */,
+				AF337F46E4F0253335829B9F /* Generated Mocks */,
+				47E2B45B29886F750011FE7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -375,7 +425,9 @@
 		47FBD5B829832CD300E145F5 /* PathFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				47E2B46C29889B350011FE7F /* Domain */,
 				47FBD5B929832CD300E145F5 /* PathFinderTests.swift */,
+				47E2B4702988BFA40011FE7F /* TestMocks.swift */,
 			);
 			path = PathFinderTests;
 			sourceTree = "<group>";
@@ -387,6 +439,14 @@
 				47FBD5C529832CD300E145F5 /* PathFinderUITestsLaunchTests.swift */,
 			);
 			path = PathFinderUITests;
+			sourceTree = "<group>";
+		};
+		AF337F46E4F0253335829B9F /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				45CC5AFD8E1E33BD7CA4B26B /* PathFinderTests-PathFinderDevMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +477,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47FBD5CC29832CD300E145F5 /* Build configuration list for PBXNativeTarget "PathFinderTests" */;
 			buildPhases = (
+				87671338AE267416F89285A9 /* Generate Mockingbird Mocks */,
 				47FBD5B129832CD300E145F5 /* Sources */,
 				47FBD5B229832CD300E145F5 /* Frameworks */,
 				47FBD5B329832CD300E145F5 /* Resources */,
@@ -427,6 +488,9 @@
 				47FBD5B729832CD300E145F5 /* PBXTargetDependency */,
 			);
 			name = PathFinderTests;
+			packageProductDependencies = (
+				47E2B45E2988700E0011FE7F /* Mockingbird */,
+			);
 			productName = PathFinderTests;
 			productReference = 47FBD5B529832CD300E145F5 /* PathFinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -484,6 +548,7 @@
 			packageReferences = (
 				4737153029845632008BC151 /* XCRemoteSwiftPackageReference "Swinject" */,
 				473715332984563F008BC151 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				47E2B45829886E090011FE7F /* XCRemoteSwiftPackageReference "mockingbird" */,
 			);
 			productRefGroup = 47FBD5A029832CCF00E145F5 /* Products */;
 			projectDirPath = "";
@@ -501,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E2B4612988705E0011FE7F /* Colors.xcassets in Resources */,
 				4737152A298451B6008BC151 /* Localizable.strings in Resources */,
 				47FBD5AF29832CD300E145F5 /* LaunchScreen.storyboard in Resources */,
 				4737152729844FD7008BC151 /* Main.storyboard in Resources */,
@@ -523,6 +589,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87671338AE267416F89285A9 /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/PathFinderTests-PathFinderDevMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n# Infer the derived data location from the build environment.\n[[ -z \"${DERIVED_DATA+x}\" ]] && DERIVED_DATA=\"$(echo \"${BUILD_ROOT}\" | sed -n 's|\\(.*\\)/Build/.*|\\1|p')\"\n\n\"${DERIVED_DATA}/SourcePackages/checkouts/mockingbird/mockingbird\" generate --targets \"PathFinderDev\" --outputs \"${SRCROOT}/MockingbirdMocks/PathFinderTests-PathFinderDevMocks.generated.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47FBD59B29832CCF00E145F5 /* Sources */ = {
@@ -569,6 +654,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47FBD5BA29832CD300E145F5 /* PathFinderTests.swift in Sources */,
+				4C022D1648703E25ECF5E7EF /* PathFinderTests-PathFinderDevMocks.generated.swift in Sources */,
+				47E2B4732988C38E0011FE7F /* GetLocationDataUseCaseTestCase.swift in Sources */,
+				47E2B46E29889B4B0011FE7F /* GetUserLocationUseCaseTestCase.swift in Sources */,
+				47E2B4762988C8320011FE7F /* Location.swift in Sources */,
+				47E2B4712988BFA40011FE7F /* TestMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,8 +899,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAAXVCT5HN;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -819,7 +911,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PathFinder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathFinderDev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PathFinderDev";
 			};
 			name = Debug;
 		};
@@ -828,8 +920,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XAAXVCT5HN;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -838,7 +932,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PathFinder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathFinderDev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PathFinderDev";
 			};
 			name = Release;
 		};
@@ -936,6 +1030,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		47E2B45829886E090011FE7F /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -948,6 +1050,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 473715332984563F008BC151 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		47E2B45E2988700E0011FE7F /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47E2B45829886E090011FE7F /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

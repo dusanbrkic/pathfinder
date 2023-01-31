@@ -57,7 +57,7 @@ class CompassViewController: BaseViewController {
         distanceLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(Dimensions.Inset.large)
             make.right.equalToSuperview().offset(-Dimensions.Inset.large)
-            make.top.equalTo(compassView.snp.bottom).offset(Dimensions.Inset.medium)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-Dimensions.Inset.medium)
         }
     }
     

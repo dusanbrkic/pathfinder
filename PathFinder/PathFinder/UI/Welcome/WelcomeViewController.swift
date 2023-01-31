@@ -39,14 +39,14 @@ class WelcomeViewController: BaseViewController {
     private lazy var createANewLocationButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.setTitle(Localization.General.chooseANewLocation, for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         return button
     }()
     
     private lazy var openInMaps: UIButton = {
         let button = UIButton(frame: .zero)
         button.setTitle(Localization.General.openInAppleMaps, for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.isHidden = true
         return button
     }()
@@ -54,7 +54,7 @@ class WelcomeViewController: BaseViewController {
     private lazy var compass: UIButton = {
         let button = UIButton(frame: .zero)
         button.setTitle(Localization.General.compass, for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.isHidden = true
         return button
     }()

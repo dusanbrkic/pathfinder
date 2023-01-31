@@ -1,10 +1,11 @@
 import CoreLocation
+import Combine
 
 class LocationService: NSObject, LocationServiceDelegate {
     private let locationManager = CLLocationManager()
     
-    var currentLocation: Published<Location.Coordinates>.Publisher { $currentLocationValue }
-    var currentHeading: Published<Location.Heading>.Publisher { $currentHeadingValue }
+    var currentLocation: AnyPublisher<Location.Coordinates, Never> { $currentLocationValue.eraseToAnyPublisher() }
+    var currentHeading: AnyPublisher<Location.Heading, Never> { $currentHeadingValue.eraseToAnyPublisher() }
     
     @Published var currentLocationValue: Location.Coordinates
     @Published var currentHeadingValue: Location.Heading

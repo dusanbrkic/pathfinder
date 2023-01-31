@@ -20,7 +20,7 @@ class LocationPickViewController: BaseViewController {
     lazy var chooseLocationButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.setTitle(Localization.General.chooseThisLocation, for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.isHidden = true
         return button
     }()
